@@ -1,1 +1,195 @@
-<h1>Test</h1>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wijnmakerij Maurits van Dinckelaar | Ambachtelijke Friese Cider</title>
+    <style>
+        :root {
+            --primary: #0a192f; 
+            --accent: #5d7a51; 
+            --gold: #c5a059;
+            --bg: #faf9f6;
+            --text: #2c2c2c;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #eae7e0;
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+        .hero {
+            position: relative;
+            height: 60vh;
+            background: var(--primary);
+            overflow: hidden;
+        }
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            width: 90%;
+        }
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: var(--primary);
+            text-align: center;
+            font-size: 2rem;
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+            margin-bottom: 40px;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        .grid img {
+            width: 100%;
+            border-radius: 2px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .full-width-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin: 40px 0;
+        }
+        .bottles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .bottle-card {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #eae7e0;
+        }
+        .bottle-card img {
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 80px;
+        }
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .hero-text h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/logo.jpg" alt="Wijnmakerij Maurits van Dinckelaar" class="logo">
+</header>
+
+<div class="hero">
+    <img src="img/hero.jpeg" alt="Friese Boomgaard">
+    <div class="hero-text">
+        <h1>Ambachtelijke Friese Cider</h1>
+        <p>Geduld, traditie en de kracht van de natuur.</p>
+    </div>
+</div>
+
+<section>
+    <div class="grid">
+        <div>
+            <h2>Onze Filosofie</h2>
+            <p>Bij Wijnmakerij Maurits van Dinckelaar geloven we in minimale interventie. Onze cider ontstaat door wilde vergisting van oude Friese appelrassen. Geen toegevoegde suikers, geen haast.</p>
+            <p>Het resultaat is een eerlijke, droge cider die de ziel van het Friese landschap weerspiegelt.</p>
+        </div>
+        <img src="img/fruit.jpg" alt="Vers geoogst fruit">
+    </div>
+
+    <div style="text-align: center; margin: 60px 0;">
+        <img src="img/glas.jpeg" alt="Glas Friese Cider" style="max-width: 80%; border-radius: 2px;">
+        <p><em>De perfecte balans tussen fruitigheid en de karakteristieke zuren.</em></p>
+    </div>
+</section>
+
+<img src="img/boomgaard.jpeg" alt="De Boomgaard" class="full-width-img">
+
+<section>
+    <div class="grid">
+        <img src="img/geschiedenis.jpg" alt="Historie van Dinckelaar">
+        <div>
+            <h2>Historie</h2>
+            <p>De naam Maurits van Dinckelaar voert terug naar de 17e eeuw. Als officier bij de Friesche Garde diende hij de Friese Nassau's in Leeuwarden. Diezelfde standvastigheid en trots vormen de basis voor onze wijnmakerij.</p>
+        </div>
+    </div>
+</section>
+
+<section style="background: #f0eee9; max-width: 100%; padding: 80px 0;">
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
+        <h2 style="left: 0; transform: none;">Het Proces</h2>
+        <div class="bottles-grid">
+            <div class="bottle-card">
+                <img src="img/mispels.jpg" alt="Mispels">
+                <h3>Vergeten Fruit</h3>
+                <p>Naast appels werken we met mispels en peren om unieke smaakprofielen te creëren die nergens anders te vinden zijn.</p>
+            </div>
+            <div class="bottle-card">
+                <img src="img/riddling-rack.jpeg" alt="Traditionele rijping">
+                <h3>Méthode Traditionnelle</h3>
+                <p>Onze ciders rusten langdurig op hun eigen gist ('sur lie') voor een verfijnde mousse en diepgang.</p>
+            </div>
+            <div class="bottle-card">
+                <img src="img/flessen.jpg" alt="De flessen">
+                <h3>Karakter & Structuur</h3>
+                <p>Elke fles is genummerd en vertelt het verhaal van het oogstjaar. Ongefilterd en vol leven.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Wijnmakerij Maurits van Dinckelaar</p>
+    <p>Leeuwarden, Friesland | Ambacht in elke druppel.</p>
+</footer>
+
+</body>
+</html>
