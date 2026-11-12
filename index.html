@@ -22,6 +22,7 @@
         "url": "https://dinckelaar.nl/",
         "logo": "https://dinckelaar.nl/img/logo.jpg",
         "image": "https://dinckelaar.nl/img/hero.jpeg",
+        "sameAs": ["https://www.instagram.com/dinckelaar"],
         "description": "Ambachtelijke Friese cider van onbespoten fruit uit kleine boomgaarden en tuinen, gemaakt met wilde vergisting volgens de méthode ancestrale en méthode traditionnelle.",
         "address": {
             "@type": "PostalAddress",
@@ -178,6 +179,15 @@
             padding: 60px 20px;
             margin-top: 80px;
         }
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+            border-bottom: 1px solid var(--gold);
+        }
+        footer a:hover {
+            color: white;
+            border-bottom-color: white;
+        }
         @media (max-width: 768px) {
             .grid { grid-template-columns: 1fr; }
             .hero-text h1 { font-size: 1.8rem; }
@@ -294,9 +304,8 @@
 <footer>
     <p>&copy; 2026 Wijnmakerij Maurits van Dinckelaar</p>
     <p>Leeuwarden, Friesland | Ambacht in elke druppel.</p>
+    <p><a href="https://www.instagram.com/dinckelaar" rel="me noopener" target="_blank">Volg ons op Instagram: @dinckelaar</a></p>
 </footer>
 
 </body>
 </html>
-
-
