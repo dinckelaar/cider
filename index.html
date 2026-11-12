@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wijnmakerij Maurits van Dinckelaar | Ambachtelijke Friese Cider</title>
+    <meta name="description" content="Ambachtelijke Friese cider van onbespoten fruit uit kleine boomgaarden en tuinen. Wilde vergisting, méthode ancestrale en méthode traditionnelle, minimaal sulfiet.">
     <style>
         :root {
-            --primary: #0a192f; 
-            --accent: #5d7a51; 
+            --primary: #0a192f;
+            --accent: #5d7a51;
             --gold: #c5a059;
             --bg: #faf9f6;
             --text: #2c2c2c;
@@ -91,11 +92,46 @@
             object-fit: cover;
             margin: 40px 0;
         }
+        .intro {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        .kenmerken {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 30px;
+        }
+        .kenmerk {
+            border-top: 2px solid var(--gold);
+            padding-top: 18px;
+        }
+        .kenmerk h3 {
+            color: var(--accent);
+            font-size: 1.15rem;
+            margin: 0 0 8px;
+        }
+        .kenmerk p {
+            margin: 0;
+            font-size: 0.98rem;
+            line-height: 1.65;
+        }
+        .band {
+            background: #f0eee9;
+            max-width: 100%;
+            padding: 80px 0;
+        }
+        .band-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
         .bottles-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            margin-top: 40px;
+            margin-top: 60px;
         }
         .bottle-card {
             background: white;
@@ -118,6 +154,8 @@
         @media (max-width: 768px) {
             .grid { grid-template-columns: 1fr; }
             .hero-text h1 { font-size: 1.8rem; }
+            section { padding: 60px 20px; }
+            .band { padding: 60px 0; }
         }
     </style>
     <script data-goatcounter="https://dinckelaar.goatcounter.com/count"
@@ -141,7 +179,7 @@
     <div class="grid">
         <div>
             <h2>Onze Filosofie</h2>
-            <p>Bij Wijnmakerij Maurits van Dinckelaar geloven we in minimale interventie. Onze cider ontstaat door wilde vergisting van oude Friese appelrassen. Geen toegevoegde suikers, geen haast.</p>
+            <p>Bij Wijnmakerij Maurits van Dinckelaar geloven we in minimale interventie. Onze cider ontstaat door wilde vergisting van onbespoten Fries fruit, zonder haast.</p>
             <p>Het resultaat is een eerlijke, droge cider die de ziel van het Friese landschap weerspiegelt.</p>
         </div>
         <img src="img/fruit.jpg" alt="Vers geoogst fruit">
@@ -156,6 +194,29 @@
 <img src="img/boomgaard.jpeg" alt="De Boomgaard" class="full-width-img">
 
 <section>
+    <h2>Ons Fruit</h2>
+    <p class="intro">Goede cider begint in de boomgaard. Al ons fruit is onbespoten en komt uit Friesland. Voor een kleine selectie ciders gebruiken we naast appels ook peren en kweeperen.</p>
+    <div class="kenmerken">
+        <div class="kenmerk">
+            <h3>Onbespoten</h3>
+            <p>We werken uitsluitend met onbespoten fruit.</p>
+        </div>
+        <div class="kenmerk">
+            <h3>Uit Friesland</h3>
+            <p>Geplukt in kleine boomgaarden en particuliere tuinen, verspreid over Friesland.</p>
+        </div>
+        <div class="kenmerk">
+            <h3>Half- en hoogstam</h3>
+            <p>Het fruit komt van halfstam- en hoogstambomen.</p>
+        </div>
+        <div class="kenmerk">
+            <h3>Veel rassen</h3>
+            <p>Een grote variëteit aan appelrassen, waaronder oude rassen en echte ciderappels.</p>
+        </div>
+    </div>
+</section>
+
+<section>
     <div class="grid">
         <img src="img/geschiedenis.jpg" alt="Historie van Dinckelaar">
         <div>
@@ -165,23 +226,38 @@
     </div>
 </section>
 
-<section style="background: #f0eee9; max-width: 100%; padding: 80px 0;">
-    <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
-        <h2 style="left: 0; transform: none;">Het Proces</h2>
+<section class="band">
+    <div class="band-inner">
+        <h2>Het Proces</h2>
+        <p class="intro">In de kelder doen we zo weinig mogelijk. De gisten, de kou en de tijd doen het werk.</p>
+        <div class="kenmerken">
+            <div class="kenmerk">
+                <h3>Wilde gisten</h3>
+                <p>Vergisting met wilde, natuurlijke gisten of met biologische gisten.</p>
+            </div>
+            <div class="kenmerk">
+                <h3>Koele vergisting</h3>
+                <p>Onze ciders vergisten koel en in hun eigen tempo.</p>
+            </div>
+            <div class="kenmerk">
+                <h3>Bubbels uit de fles</h3>
+                <p>De mousse ontstaat in de fles zelf: volgens de méthode ancestrale of de méthode traditionnelle.</p>
+            </div>
+            <div class="kenmerk">
+                <h3>Minimaal sulfiet</h3>
+                <p>We gebruiken zo min mogelijk sulfiet.</p>
+            </div>
+        </div>
+
         <div class="bottles-grid">
             <div class="bottle-card">
-                <img src="img/mispels.jpg" alt="Mispels">
-                <h3>Vergeten Fruit</h3>
-                <p>Naast appels werken we met mispels en peren om unieke smaakprofielen te creëren die nergens anders te vinden zijn.</p>
-            </div>
-            <div class="bottle-card">
                 <img src="img/riddling-rack.jpeg" alt="Traditionele rijping">
-                <h3>Méthode Traditionnelle</h3>
+                <h3>Rijping sur lie</h3>
                 <p>Onze ciders rusten langdurig op hun eigen gist ('sur lie') voor een verfijnde mousse en diepgang.</p>
             </div>
             <div class="bottle-card">
                 <img src="img/flessen.jpg" alt="De flessen">
-                <h3>Karakter & Structuur</h3>
+                <h3>Karakter &amp; Structuur</h3>
                 <p>Elke fles is genummerd en vertelt het verhaal van het oogstjaar. Ongefilterd en vol leven.</p>
             </div>
         </div>
@@ -195,3 +271,4 @@
 
 </body>
 </html>
+
